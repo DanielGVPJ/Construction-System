@@ -6,7 +6,7 @@
 #include "Arduino.h"
 #include "BIY.h"
 
-BIY::BIY()
+BIY::BIY() //Constructor
 {
   pinMode(12, OUTPUT);
   pinMode(9, OUTPUT);
@@ -16,7 +16,7 @@ BIY::BIY()
   _directionStates[1] == 0;
 }
 
-void BIY::timerS()
+void BIY::timerS() //Future functionality for multitasking
 {
   _Time= _Time+0.01;
 }
