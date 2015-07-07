@@ -47,7 +47,21 @@
 
 })(jQuery);
 
+
+
+
+// Upload button clicked
+
+
+
+
+
+
+
 $(document).ready(function(){
+
+// set variables for time intervals
+
 	var timeStartflash;
 	var timeSensorA;
 	var timeSensorB;
@@ -55,12 +69,22 @@ $(document).ready(function(){
 	var timeMotorB;
 	var timeServo;
 	var timeWait;
+
+// when Upload button clicked
+
+
 	$("#up").click(function(){
 		timeStartflash = setInterval(function(){flash();},300);
 	});
+
+// function WAIT called after Flash
+
 	function wait(){
 		timeWait = setInterval(function(){Waitt();},300);
 	}
+
+// function SENSORSELECT called after Waitt
+
 	function sensorSelect(){
 		var sensor = $(".sr").val();
 		if(sensor == "1"){
@@ -70,6 +94,9 @@ $(document).ready(function(){
 			timeSensorB = setInterval(function(){SensorB();},150);
 		}
 	}
+
+// function MODULESELECT called after Sensorselect
+
 	function moduleSelect(){
 		var module = $(".md").val();
 		if(module == "a"){
@@ -82,6 +109,9 @@ $(document).ready(function(){
 			timeServo = setInterval(function(){Servo();},150);
 		}
 	}
+
+// fucntion WAITT called after wait
+
 	var waitGoing=0;
 	function Waitt(){
 		switch(waitGoing){
@@ -95,6 +125,9 @@ $(document).ready(function(){
 		}
 		waitGoing++;
 	}
+
+// function FLASH to calibrate sensors
+
 	var Startflash=0;
 	function flash(){
 		switch(Startflash){
@@ -103,13 +136,16 @@ $(document).ready(function(){
 				break;
 			case 1:
 				$("#neutral").css("background-color","grey");
-				clearInterval(timeStartflash);
-				wait();
-				Startflash = -1;
+				clearInterval(timeStartflash);							// exit function because timeStartFlash is cleared				
+				wait();													// call function WAIT
+				Startflash = -1;										// as timeStartFlash is cleared, when Startflash adds one, its going to be 0 again
 				break;
 		}
 		Startflash++;
 	}
+
+// SENSOR A --> if Sensor selected is A
+
 	var SensoraGoing=0;
 	function SensorA(){
 		switch(SensoraGoing){
@@ -132,13 +168,17 @@ $(document).ready(function(){
 				$("#neutral").css("background-color","grey");
 				break;
 			case 6:
-				clearInterval(timeSensorA);
-				moduleSelect();
-				SensoraGoing = -1;
+				clearInterval(timeSensorA);								// exit function
+				moduleSelect();											// after indicating Sensor, call Modules
+				SensoraGoing = -1;										 
 				break;
 		}
 		SensoraGoing++;
 	}
+
+// SENSOR B --> if Sensor selected is B
+
+
 	var SensorbGoing=0;
 	function SensorB(){
 		switch(SensorbGoing){
@@ -168,6 +208,9 @@ $(document).ready(function(){
 		}
 		SensorbGoing++;
 	}
+
+// MOTOR A --> is Module selected (Module selected) is A
+
 	var MotoraGoing=0;
 	function MotorA(){
 		switch(MotoraGoing){
@@ -196,6 +239,9 @@ $(document).ready(function(){
 		}
 		MotoraGoing++;
 	}
+
+// MOTOR B --> is Module selected (Module selected) is B
+
 	var MotorbGoing=0;
 	function MotorB(){
 		switch(MotorbGoing){
@@ -224,6 +270,9 @@ $(document).ready(function(){
 		}
 		MotorbGoing++;
 	}
+
+// SERVO --> if Module selected (Module selected) is the Servo
+
 	var ServoGoing=0;
 	function Servo(){
 		switch(ServoGoing){
