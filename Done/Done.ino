@@ -185,11 +185,13 @@ void loop() {
           serialCode[doneReading] = 1;
           doneReading++;
         doingRead=0;
+        tone(buzzerPin,G7,100);  
         }
         else if(readingBase >= (analogRead(reading)+50)){
           serialCode[doneReading] = 0;
           doneReading++;
         doingRead=0;
+        tone(buzzerPin,C7,100); 
         }
       }
       else if(readingBase <= (analogRead(reading)+50) && readingBase >= (analogRead(reading)-50)){
@@ -197,6 +199,12 @@ void loop() {
       }
       Serial.println(doneReading);
     }
+      Serial.print(serialCode[0]);
+      Serial.print(serialCode[1]);
+      Serial.print(serialCode[2]);
+      Serial.print(serialCode[3]);
+      Serial.print(serialCode[4]);
+      Serial.println(serialCode[5]);
     int Sensorusing;
     int Moduleusing;
     if(serialCode[0] == serialSensorA[0] && serialCode[1] == serialSensorA[1] && serialCode[2] == serialSensorA[2]){
@@ -215,6 +223,9 @@ void loop() {
     else if(serialCode[3] == serialServo[0] && serialCode[4] == serialServo[1] && serialCode[5] == serialServo[2]){
       Moduleusing = 2;
     }
+    else{
+      Moduleusing = 3;
+    }
     if(motorAActive == Sensorusing){
       motorAActive = 0;
     }
@@ -227,10 +238,38 @@ void loop() {
     }
     if(Moduleusing == 0){
       motorAActive = Sensorusing;
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
       Asensor = analogRead(Sensorusing);
     }
     else if(Moduleusing == 1){
       motorBActive = Sensorusing;
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(500);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
+      tone(buzzerPin,C7,100);  
+      delay(300);
       Bsensor = analogRead(Sensorusing);
     }
     else if(Moduleusing == 2){
@@ -248,3 +287,4 @@ void loop() {
     tone(buzzerPin,G7,100);
   }
 }
+
