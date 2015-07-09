@@ -101,6 +101,9 @@ int Bsensor;
 int servoActive = 0;
 int motorAActive = 0;
 int motorBActive = 0;
+int servoDark = 0;
+int servoLight = 0;
+int servoPosition = 0;
 int out=0;
 int servoReading;
 int reading;
@@ -148,9 +151,10 @@ void loop() {
       motor.stop("B");
     }
   }
-  if(servoActive > 0)
+  if(servoActive > 0 && (analogRead(servoActive)>(servoPosition+60) || analogRead(servoActive)<(servoPosition-60)))
   {
-    servo1.write(map(analogRead(servoActive),0,1020,0,180));
+    servo1.write(map(analogRead(servoActive),servoDark,servoLight,0,180));
+    servoPosition = analogRead(servoActive);
   }
   if (buttonState == HIGH) {     
     // turn LED on:    
@@ -275,6 +279,20 @@ void loop() {
     else if(Moduleusing == 2){
       servo1.attach(18);
       servoActive = Sensorusing;
+        buttonState = digitalRead(buttonPin);
+      while(buttonState == LOW){
+        servoDark = analogRead(Sensorusing);
+        buttonState = digitalRead(buttonPin);
+      }
+      tone(buzzerPin,C7,100);  
+      delay(300);
+        buttonState = digitalRead(buttonPin);
+      while(buttonState == LOW){
+        servoLight = analogRead(Sensorusing);
+        buttonState = digitalRead(buttonPin);
+      }
+      tone(buzzerPin,G7,100);  
+      delay(300);
     }
     tone(buzzerPin,C7,100);  
     delay(100);
@@ -286,5 +304,8 @@ void loop() {
     delay(100);
     tone(buzzerPin,G7,100);
   }
+  Serial.print(analogRead(2));
+  Serial.print("---");
+  Serial.println(analogRead(3));
 }
 
