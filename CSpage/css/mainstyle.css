@@ -1,0 +1,44 @@
+@font-face {
+	font-family: orange;
+	src : url(../fonts/orange-juice.ttf);
+	} 
+@font-face {
+	font-family: myFont;
+	src : url(../fonts/Folktale.ttf);
+	} 
+@font-face {
+	font-family: handle;
+	src : url(../fonts/Handlee-Regular.ttf);
+	} 
+
+#title{
+	font-family: orange; 
+	font-size: 500%;
+	color: #000000;
+}
+.menu{
+	width: 100%;
+}
+#menu{
+	list-style: none;
+}
+#menu li{
+	display: block;
+	float: left;
+}
+#menu_title{
+	font-family: handle;
+	font-size: 30px;
+}
+.info{
+	float: left;
+	width: 100%;
+	height: 300px;
+	visibility: visible;
+}
+#list{
+	list-style: none;
+}
+#sections{
+	height: 500px;
+}
