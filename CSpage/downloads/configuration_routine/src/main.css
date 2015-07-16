@@ -1,0 +1,35 @@
+h1{
+	font-family: 'Indie Flower', cursive;
+}
+section article ul{
+	list-style: none;
+}
+section article.info #neutral{
+	display: block;
+	position: relative;
+	height: 400px;
+	width: 480px;
+	vertical-align: top;
+	background-color: grey;
+	float: right;
+}
+section article.info{
+	display: inline-block;
+	position: relative;
+	height: 350px;
+	margin: 50px 0px 20px 10%;
+	font-size: 1.2em;
+	font-family: 'Indie Flower', cursive;
+	vertical-align: top;
+	/*border: 1px solid;*/
+	float: left;
+}
+footer address{
+	margin-top: 10%;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	font-family: 'Indie Flower', cursive;
+}

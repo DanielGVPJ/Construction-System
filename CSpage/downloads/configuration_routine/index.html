@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="src/jquery-2.1.4.js"></script>
+	<script src="src/javascript.js"></script>
+	<link rel="stylesheet" href="src/main.css">
+	<title>Upload</title>
+</head>
+<body>
+	<h1>Upload a program</h1>
+	<section class="setup">
+		<article class="info">
+			<span><h2>Configuration Routine</h2></span>
+			<h3>Sensors</h3>
+			<ul>
+				<li><select name="sr" id="sr" class="sr">
+						<option value="1">Sensor 1</option>
+						<option value="2">Sensor 2</option>
+					</select>
+				</li>
+			</ul>
+			<h3>Modules</h3>
+			<ul>
+				<li>
+					<select name="md" id="md" class="md">
+						<option value="a">Motor A</option>
+						<option value="b">Motor B</option>
+						<option value="c">Servo</option>
+					</select>	
+				</li>		
+			</ul>
+			<ul>
+				<li>
+					<input type="button" id="up" value="Upload">
+				</li>
+			</ul>
+		</article>
+		<article class="info">
+			<div id="neutral">
+				
+			</div>
+		</article>
+	</section>
+
+	<footer class="footer">
+		<address class="text-center">
+  			<strong>Build It Youself</strong><br>
+  			269 Pearl Street<br>
+  			Cambridge, MA 02139<br>
+  			<abbr title="Phone">Office:</abbr> 617.547.9705 <br>
+  			<abbr title="Phone">Cell:</abbr> 617.875.1960
+		</address>
+	</footer>
+</body>
+</html>
