@@ -72,24 +72,21 @@ section article.info{
 	font-size: 1.8em;
 	font-family: 'Indie Flower', cursive;
 	vertical-align: top;
-	border: 1px solid;
+	/*border: 1px solid;*/
 	float: left;
 }
 section article.info #neutral{
 	display: inline-block;
 	position: relative;
 	height: 400px;
-	margin: 10px 0px 20px 10%;
 	width: 85%;
 	vertical-align: top;
 	background-color: grey;
+	float: right;
 }
 section article ul li{
 	list-style: none;
 	padding: 5px;
-}
-section article.info{
-	float: left;
 }
 section article h2{
 	padding: 10px;
@@ -99,18 +96,17 @@ section article.info figure img{
 	width: 470px;
 	height: 230px;
 }
-.setup article i#up{
+.setup article span#up{
 	color: #8BC34A;
 	position: absolute;
 	border-radius: 50%;
-	margin: 10px 0px 0px 0px;
+	cursor: pointer;
 }
-.setup article i#load{
+.setup article span#load{
 	position: absolute;
 	border-radius: 50%;
-	margin: 10px 50px 0px 100px;
 }
-.setup article i#up:hover{
+.setup article span#up:hover{
 	color: #03A9F4;
 }
 section article h3{

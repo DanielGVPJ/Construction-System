@@ -2,21 +2,27 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
 
-// COG spin Hidden
+// Hidden elements
 
 $(document).ready(function(){
 	$("section article").find("#load").hide();
+	$("#first").click();
+	$("section article ul li audio").hide();
 })
 
 // Navbar, click
 
 $("#first").click(function(){
+	$(".setup").hide();
+	$(".home").show();
 	$(this).css({"text-decoration":"none","color":"#212121"});
 	$("#second").css("color","#FFFFFF");
 	$("#third").css("color","#FFFFFF");
 })
 
 $("#second").click(function(){
+	$(".home").hide();
+	$(".setup").show();
 	$(this).css({"text-decoration":"none","color":"#212121"});
 	$("#first").css("color","#FFFFFF");
 	$("#third").css("color","#FFFFFF");
@@ -49,6 +55,15 @@ $("#third").click(function(){
 
 	$("#up").click(function(){
 		//alert("Hola");
+		/*audio = new Audio();
+		var ranumber = Math.floor((Math.random() * 7) + 1);
+		audio.src="sounds/"+ranumber+".wav";
+		audio.play();
+			function pause(){
+				audio.pause();
+				clearInterval(pas);
+			}
+			var pas = setInterval(function(){pause()},3300);*/
 		timeStartflash = setInterval(function(){flash();},300);
 		icon++;
 		show(icon);
