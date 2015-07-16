@@ -1,12 +1,36 @@
-// Upload button clicked
-
-
-
-
-
 
 jQuery.noConflict();
 jQuery(document).ready(function($){
+
+// COG spin Hidden
+
+$(document).ready(function(){
+	$("section article").find("#load").hide();
+})
+
+// Navbar, click
+
+$("#first").click(function(){
+	$(this).css({"text-decoration":"none","color":"#212121"});
+	$("#second").css("color","#FFFFFF");
+	$("#third").css("color","#FFFFFF");
+})
+
+$("#second").click(function(){
+	$(this).css({"text-decoration":"none","color":"#212121"});
+	$("#first").css("color","#FFFFFF");
+	$("#third").css("color","#FFFFFF");
+})
+
+$("#third").click(function(){
+	$(this).css({"text-decoration":"none","color":"#212121"});
+	$("#second").css("color","#FFFFFF");
+	$("#first").css("color","#FFFFFF");
+})
+
+
+// Upload button clicked
+
 
 // set variables for time intervals
 
@@ -17,12 +41,17 @@ jQuery(document).ready(function($){
 	var timeMotorB;
 	var timeServo;
 	var timeWait;
+	var icon = 0;
+
 
 // when Upload button clicked
 
 
 	$("#up").click(function(){
+		//alert("Hola");
 		timeStartflash = setInterval(function(){flash();},300);
+		icon++;
+		show(icon);
 	});
 
 // function WAIT called after Flash
@@ -34,7 +63,7 @@ jQuery(document).ready(function($){
 // function SENSORSELECT called after Waitt
 
 	function sensorSelect(){
-		var sensor = $(".sr").val();
+		var sensor = $("#sr").val();
 		if(sensor == "1"){
 			timeSensorA = setInterval(function(){SensorA();},150);
 		}
@@ -46,7 +75,7 @@ jQuery(document).ready(function($){
 // function MODULESELECT called after Sensorselect
 
 	function moduleSelect(){
-		var module = $(".md").val();
+		var module = $("#md").val();
 		if(module == "a"){
 			timeMotorA = setInterval(function(){MotorA();},150);
 		}
@@ -122,6 +151,8 @@ jQuery(document).ready(function($){
 				break;
 		}
 		SensoraGoing++;
+		icon++;
+		show(icon);
 	}
 
 // SENSOR B --> if Sensor selected is B
@@ -155,6 +186,8 @@ jQuery(document).ready(function($){
 				break;
 		}
 		SensorbGoing++;
+		icon++;
+		show(icon);
 	}
 
 // MOTOR A --> is Module selected (Module selected) is A
@@ -183,9 +216,12 @@ jQuery(document).ready(function($){
 			case 6:
 				clearInterval(timeMotorA);
 				MotoraGoing = -1;
+				icon = -1;
 				break;
 		}
 		MotoraGoing++;
+		icon++;
+		show(icon);
 	}
 
 // MOTOR B --> is Module selected (Module selected) is B
@@ -214,9 +250,12 @@ jQuery(document).ready(function($){
 			case 6:
 				clearInterval(timeMotorB);
 				MotorbGoing = -1;
+				icon = -1;
 				break;
 		}
 		MotorbGoing++;
+		icon++;
+		show(icon);
 	}
 
 // SERVO --> if Module selected (Module selected) is the Servo
@@ -245,8 +284,48 @@ jQuery(document).ready(function($){
 			case 6:
 				clearInterval(timeServo);
 				ServoGoing = -1;
+				icon = -1;
 				break;
 		}
 		ServoGoing++;
+		icon++;
+		show(icon);
+	}
+
+	function show(){
+		if(icon != 0){
+			$("section article").find("#up").hide();
+			$("section article").find("#load").show();
+		}
+		else{
+			$("section article").find("#load").hide();
+			$("section article").find("#up").show();
+		}
+		switch(icon){
+			case 1: 
+				$("#load").css("color","#303F9F");
+					break;
+			case 2:
+				$("#load").css("color","#FF9800");
+					break;
+			case 3:
+				$("#load").css("color","#8BC34A");
+					break;
+			case 5:
+				$("#load").css("color","#00BCD4");
+					break;
+			case 7:
+				$("#load").css("color","#7C4DFF");
+					break;
+			case 9:
+				$("#load").css("color","#303F9F");
+					break;
+			case 11:
+				$("#load").css("color","#00BCD4");
+					break;
+			case 13:
+				$("#load").css("color","#7C4DFF");
+					break; 	
+		}
 	}
 });

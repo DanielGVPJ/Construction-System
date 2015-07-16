@@ -16,20 +16,7 @@
 	font-size: 500%;
 	color: #000000;
 }
-.menu{
-	width: 100%;
-}
-#menu{
-	list-style: none;
-}
-#menu li{
-	display: block;
-	float: left;
-}
-#menu_title{
-	font-family: handle;
-	font-size: 30px;
-}
+
 .info{
 	float: left;
 	width: 100%;
@@ -41,4 +28,120 @@
 }
 #sections{
 	height: 500px;
+}
+header{
+	background-color: #F44336;
+	text-align: right;
+	-webkit-box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.49);
+	-moz-box-shadow:    0px 5px 5px rgba(100, 100, 100, 0.49);
+	box-shadow:         0px 5px 5px rgba(100, 100, 100, 0.49);
+}
+header nav ul{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	list-style: none;
+}
+header nav ul li{
+	height: 35px;
+	margin-top: 0px;
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+	/*border: 1px solid;*/
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #f6f1ed;
+	padding: 15px 15px;
+	font-family: 'Indie Flower', cursive;
+}
+header nav ul li a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+	/*color: #06000a;*/
+}
+
+section article.info{
+	display: inline-block;
+	position: relative;
+	height: 450px;
+	margin: 50px 0px 20px 10%;
+	width: 85%;
+	font-size: 1.8em;
+	font-family: 'Indie Flower', cursive;
+	vertical-align: top;
+	border: 1px solid;
+	float: left;
+}
+section article.info #neutral{
+	display: inline-block;
+	position: relative;
+	height: 400px;
+	margin: 10px 0px 20px 10%;
+	width: 85%;
+	vertical-align: top;
+	background-color: grey;
+}
+section article ul li{
+	list-style: none;
+	padding: 5px;
+}
+section article.info{
+	float: left;
+}
+section article h2{
+	padding: 10px;
+}
+section article.info figure img{
+	border-radius: 5px;
+	width: 470px;
+	height: 230px;
+}
+.setup article i#up{
+	color: #8BC34A;
+	position: absolute;
+	border-radius: 50%;
+	margin: 10px 0px 0px 0px;
+}
+.setup article i#load{
+	position: absolute;
+	border-radius: 50%;
+	margin: 10px 50px 0px 100px;
+}
+.setup article i#up:hover{
+	color: #03A9F4;
+}
+section article h3{
+	padding-top: 10px;
+}
+
+footer address{
+	margin-top: 10%;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+@media screen and (min-width: 480px){
+	header nav ul li{
+		width: 22%;
+	}
+}
+
+@media screen and (min-width: 767px){
+	header nav ul li{
+		width: 8%;
+	}
+	section article.info{
+	height: 400px;
+	margin: 50px 3% 20px 5%;
+	width: 40%;
+	}
+}
+
+@media screen and (min-width: 950px){
 }
