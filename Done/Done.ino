@@ -110,6 +110,11 @@ int reading;
 int readingBase;
 int doneReading;
 int doingRead=1;
+int time;
+int sensorA, sensorB;
+int rangeHighA, rangeLowA, rangeHighB, rangeLowB;
+int sensorBHigh, sensorBLow, sensorAHigh, sensorALow;
+int sensorHighRange, sensorLowRange;
 const int buzzerPin = 6;
 const int buttonPin = 7;  
 int buttonState = 0;
@@ -130,10 +135,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   buttonState = digitalRead(buttonPin);
   if(motorAActive > 0){
-    if(Asensor <= (analogRead(motorAActive)-50)){
+    if(analogRead(motorAActive) > rangeHighA){
       motor.spin("A","right");
     }
-    else if(Asensor >= (analogRead(motorAActive)+50)){
+    else if(analogRead(motorAActive) < rangeLowA){
       motor.spin("A","left");
     }
     else{
@@ -141,10 +146,10 @@ void loop() {
     }
   }
   if(motorBActive > 0){
-    if(Bsensor <= (analogRead(motorBActive)-50)){
+    if(analogRead(motorBActive) > rangeHighB){
       motor.spin("B","right");
     }
-    else if(Bsensor >= (analogRead(motorBActive)+50)){
+    else if(analogRead(motorBActive) < rangeLowB){
       motor.spin("B","left");
     }
     else{
@@ -164,41 +169,67 @@ void loop() {
     tone(buzzerPin,D7,100);  
     delay(100);
     tone(buzzerPin,C7,100);
-    Asensor = analogRead(2);
-    Bsensor = analogRead(3);
+
+        sensorAHigh = analogRead(2);
+        sensorALow = analogRead(2);
+        sensorBHigh = analogRead(3);
+        sensorBLow = analogRead(3);
+      while(time < 500){
+        sensorA = analogRead(2);
+        if(sensorA > sensorAHigh){
+          rangeHighA = sensorA + 10;
+        }
+        else if(sensorA < sensorALow){
+          rangeLowA = sensorA - 10;
+        }
+        sensorB = analogRead(3);
+        if(sensorB > sensorBHigh) {
+          rangeHighB = sensorB + 10;
+        }
+        else if(sensorB < sensorBLow) {
+          rangeLowB = sensorB - 10;
+        }
+        delay(10);
+        time++;
+      }
+      time = 0;
     delay(500);
     out=0;
     while(out==0){
-      if(Asensor >= (analogRead(2)+50) || Asensor <= (analogRead(2)-50)){
+      if(analogRead(2) >= rangeHighA || analogRead(2) <= rangeLowA){
+        sensorHighRange = rangeHighA;
+        sensorLowRange = rangeLowA;
+        out = 1;
         reading = 2;
-        out = 1;
       }
-      else if(Bsensor >= (analogRead(3)+50) || Bsensor <= (analogRead(3)-50)){
-        reading = 3;
+      else if(analogRead(3) >= rangeHighB || analogRead(3) <= rangeLowB) {
+        sensorHighRange = rangeHighB;
+        sensorLowRange = rangeLowB;
         out = 1;
+        reading = 3;
       }
     }
-    
+    Serial.println(sensorHighRange);
+    Serial.println(sensorLowRange);
     delay(1000);
-    readingBase=analogRead(reading);
     doneReading=0;
     while(doneReading<=5){
       if(doingRead == 1)
       {
-        if(readingBase <= (analogRead(reading)-50)){
+        if(analogRead(reading) >= sensorHighRange){
           serialCode[doneReading] = 1;
           doneReading++;
         doingRead=0;
         tone(buzzerPin,G7,100);  
         }
-        else if(readingBase >= (analogRead(reading)+50)){
+        else if(analogRead(reading) <= sensorLowRange){
           serialCode[doneReading] = 0;
           doneReading++;
         doingRead=0;
         tone(buzzerPin,C7,100); 
         }
       }
-      else if(readingBase <= (analogRead(reading)+50) && readingBase >= (analogRead(reading)-50)){
+      else if(analogRead(reading) > sensorLowRange && analogRead(reading) < sensorHighRange){
         doingRead=1;
       }
       Serial.println(doneReading);
@@ -256,7 +287,6 @@ void loop() {
       delay(300);
       tone(buzzerPin,C7,100);  
       delay(300);
-      Asensor = analogRead(Sensorusing);
     }
     else if(Moduleusing == 1){
       motorBActive = Sensorusing;
@@ -274,7 +304,6 @@ void loop() {
       delay(300);
       tone(buzzerPin,C7,100);  
       delay(300);
-      Bsensor = analogRead(Sensorusing);
     }
     else if(Moduleusing == 2){
       servo1.attach(18);

@@ -60,7 +60,7 @@ $("#third").click(function(){
 
 	$("#up").click(function(){
 		//alert("Hola");
-		/*audio = new Audio();
+		audio = new Audio();
 		var ranumber = Math.floor((Math.random() * 7) + 1);
 		audio.src="sounds/"+ranumber+".wav";
 		audio.play();
@@ -68,7 +68,7 @@ $("#third").click(function(){
 				audio.pause();
 				clearInterval(pas);
 			}
-			var pas = setInterval(function(){pause()},3300);*/
+			var pas = setInterval(function(){pause()},3300);
 		timeStartflash = setInterval(function(){flash();},300);
 		icon++;
 		show(icon);

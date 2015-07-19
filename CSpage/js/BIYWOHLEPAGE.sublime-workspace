@@ -1,0 +1,571 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ser",
+				"serialCode"
+			],
+			[
+				"_",
+				"_brakePin"
+			],
+			[
+				"Motor",
+				"MotorB"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"carr",
+				"carrilSelect"
+			],
+			[
+				"sen",
+				"sensebutton1"
+			],
+			[
+				"sense",
+				"sensebutton2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-summer.php",
+			"settings":
+			{
+				"buffer_size": 5769,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-070615-minecraft-101.php",
+			"settings":
+			{
+				"buffer_size": 4563,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-071315-minecraft-102.php",
+			"settings":
+			{
+				"buffer_size": 4564,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/bbn-071315-soap-box-racers.php",
+			"settings":
+			{
+				"buffer_size": 4058,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/resources/css/style.css",
+			"settings":
+			{
+				"buffer_size": 421,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-workshop-leader.php",
+			"settings":
+			{
+				"buffer_size": 11783,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/XAMPP/htdocs/DGVPJ/Imageguess/index.html",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-workshop-leader.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/k-webcast/index-webcast.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-13-17-minecraft-102.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-6-10-minecraft-101.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/bb&n-13-17-soap-box-racers.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/dotdotslash.txt",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/header.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/dotdotslash.txt",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/header.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-summer-projects.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-workshop-leadernew.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-workshop-leader1.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/dev/biy-interns.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/consy/BIY/BIY.cpp",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-summer.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-minecraft-invite.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/consy/Done/Done.ino",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/consy/BIY/BIY.h",
+		"/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-miecraft-invite.php",
+		"/C/Users/Daniel GV/Desktop/BIY/keywords.txt",
+		"/C/Users/Daniel GV/Desktop/MS/server.properties",
+		"/C/Users/Daniel GV/Desktop/BIY/BIY.cpp",
+		"/C/Users/Daniel GV/Desktop/BIY/BIY.h",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/universe/bootstrap.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/universe/src/views/Home/RPCProgressBar.mxml",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/asdoc-output/all-classes.html",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/asdoc-output/all-index-R.html",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/asdoc-output/all-index-F.html",
+		"/C/Users/Daniel GV/Documents/Flex Builder 3/InventionUniverse/.buildpath",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/configuration/services-config.xml",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/configuration/services-config.xml~",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/includes/js/ajax1.js",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/admin.php",
+		"/C/Users/Daniel GV/Downloads/LED13/BIY/BIY.cpp",
+		"/C/Users/Daniel GV/Downloads/LED13/BIY/BIY.h",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/includes/js/interface-auto.js",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/php/actualizar.php",
+		"/C/row/row.bat",
+		"/C/XAMPP/htdocs/DGVPJ/Course Files/05 - Final Website/index.html",
+		"/C/Users/Daniel GV/Documents/Arduino/libraries/Motor/Morse.h",
+		"/C/Users/Daniel GV/Documents/Arduino/libraries/Motor/Morse.cpp",
+		"/C/Users/Daniel GV/Downloads/LED13/Motor/Motor.cpp",
+		"/C/Users/Daniel GV/Downloads/LED13/Motor/Motor.h",
+		"/C/Users/Daniel GV/Downloads/LED13/LED13/LED13.o",
+		"/C/Program Files (x86)/Arduino/libraries/Morse/Morse.h",
+		"/C/Program Files (x86)/Arduino/libraries/Morse/Morse.cpp",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/index.html",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/includes/interface.js",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/webservicesPHP/webservice.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/php/datosGraph.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/includes/css/styles.css",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/php/inicio.php",
+		"/C/XAMPP/htdocs/DGVPJ/Interns/biy-interns.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/amf/Adobe/DbInspector.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/universe/showstat.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/configuration/db.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/universe/db.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/Session.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/server/Reflection/Method.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/universe/src/models/CelestialBody/Galaxy.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/session/SaveHandler/DbTable.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/configuration/bootstrap.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/amf/Request.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/amf/parse/Resource/MysqlResult.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/amf/Constants.php",
+		"/C/XAMPP/htdocs/DGVPJ/iu/htdocs/iu-old/frameworks/zend/amf/Server.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/figuras/php/webservice.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/webservicesPHP/webservice.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/figuras/php/cuadrado.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/php/actualizar-conexion.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/figuras/js/ajax.js",
+		"/C/XAMPP/htdocs/DGVPJ/BIY-Trivia/trivia/php/quest.php",
+		"/D/AllDaniel/(C)/DGVPJ/Robot/webservicesPHP/webservice.php",
+		"/C/XAMPP/htdocs/DGVPJ/BIY-Trivia/trivia/php/send.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/php/actualizar.php",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/Chart_master/samples/line.html",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/Gauss/includes/js/ajax1.js",
+		"/C/XAMPP/htdocs/DGVPJ/clh-tecnologia/hackerspace/index.html",
+		"/C/Program Files (x86)/Arduino/libraries/Gameduino2/GD2.h",
+		"/C/Program Files (x86)/Arduino/libraries/Gameduino2/GD2.cpp",
+		"/C/Users/Daniel GV/Downloads/Scarlett.html",
+		"/C/Program Files (x86)/Arduino/libraries/SmartGPU2/SMARTGPU2.h",
+		"/C/XAMPP/htdocs/DGVPJ/BIY-Trivia/trivia/create.html",
+		"/C/XAMPP/htdocs/DGVPJ/BIY-Trivia/trivia/js/interface.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"success",
+			"-",
+			"verdana",
+			"ol",
+			"ca-mc101-070615",
+			"Worchester",
+			"Times New Roman",
+			"daniel-gonzalez-100",
+			">\n",
+			"1;\n    _directionPin",
+			"1;\n    ",
+			";\n",
+			"ln",
+			"Constructor",
+			"NOTE_",
+			"\\",
+			"alias",
+			"mod_alias",
+			"php",
+			"InventionUniverse.mxml",
+			"db",
+			"InventionUniverse.mxml",
+			"src/InventionUniverse.mxml",
+			"RPC",
+			"RPCProgressBar()",
+			"RPCProgressBar",
+			"RPCProgressBar.mxml",
+			"normalizing hyperspace",
+			"\\",
+			"actualizar",
+			"direccion",
+			"\"idUsuario\":document.getElementById(\"NO\").value",
+			",\n					\"estado\":\"0\"",
+			",\n					\"estado\":\"1\"",
+			"40",
+			"39",
+			"38",
+			"37",
+			"arrow-left",
+			"arrow-up",
+			"arrow-right",
+			"arrow-down",
+			"$(document).keydown(function(e) {\n\n    switch(e.keyCode){\n        case 37: //Left key pressed\n        	$(\"#arrow-left\").removeClass(\"btn-warning\");\n			$(\"#arrow-left\").addClass(\"btn-primary\");\n        	var parametros={\n					\"idUsuario\":document.getElementById(\"NO\").value,\n					\"direccion\":\"izquierda\",\n					\"estado\":\"1\"\n					};\n					$.ajax({\n						data: parametros,\n						url: \"php/actualizar.php\",\n						type: \"post\",\n						beforeSend:function(){\n						},\n						success:function(response){\n						}\n					});\n        break;\n\n        case 38: //Up key pressed\n        	$(\"#arrow-up\").removeClass(\"btn-warning\");\n			$(\"#arrow-up\").addClass(\"btn-primary\");\n        	var parametros={\n					\"idUsuario\":document.getElementById(\"NO\").value,\n					\"direccion\":\"arriba\",\n					\"estado\":\"1\"\n					};\n					$.ajax({\n						data: parametros,\n						url: \"php/actualizar.php\",\n						type: \"post\",\n						beforeSend:function(){\n						},\n						success:function(response){\n						}\n					});\n        break;\n\n        case 39: //Right key pressed\n        	$(\"#arrow-right\").removeClass(\"btn-warning\");\n			$(\"#arrow-right\").addClass(\"btn-primary\");\n        	var parametros={\n					\"idUsuario\":document.getElementById(\"NO\").value,\n					\"direccion\":\"derecha\",\n					\"estado\":\"1\"\n					};\n					$.ajax({\n						data: parametros,\n						url: \"php/actualizar.php\",\n						type: \"post\",\n						beforeSend:function(){\n						},\n						success:function(response){\n						}\n					});\n        break;\n\n        case 40: //Down key pressed\n        	$(\"#arrow-down\").removeClass(\"btn-warning\");\n			$(\"#arrow-down\").addClass(\"btn-primary\");\n        	var parametros={\n					\"idUsuario\":document.getElementById(\"NO\").value,\n					\"direccion\":\"abajo\",\n					\"estado\":\"1\"\n					};\n					$.ajax({\n						data: parametros,\n						url: \"php/actualizar.php\",\n						type: \"post\",\n						beforeSend:function(){\n						},\n						success:function(response){\n						}\n					});\n        break;\n        }\n});",
+			"h1",
+			"arroe",
+			"70",
+			"90",
+			"60",
+			"motora",
+			"[0]",
+			"heading",
+			"\n  analogWrite(_ASpeedPin, 60);   //Spins the motor on Channel A at full speed",
+			"40",
+			"float sec",
+			"Start",
+			"A",
+			"int",
+			"A",
+			"Ar",
+			"a",
+			"A",
+			"Motor",
+			"motor",
+			"Motor",
+			" = ",
+			" int ",
+			"_ABreakPin",
+			"Morse",
+			"db",
+			"dbType",
+			"connect",
+			"donnect",
+			"Host",
+			"connect",
+			"C:/Wamp/www/biy-iu-09summer",
+			"connect",
+			"luis",
+			"rodrigue",
+			"png",
+			"us.jpg",
+			"carrusel_large",
+			"carrusel_large_",
+			"todo",
+			"+",
+			"link",
+			"carriles",
+			" ",
+			"5",
+			"0",
+			"randomScalingFactor()",
+			"CLH Hacker Space",
+			"Espacio de investigaci&oacute;n y desarrollo",
+			"1",
+			"true",
+			"int,",
+			"int",
+			"int, int, int, int,",
+			"(int, int, int, int,",
+			"score",
+			"ó",
+			"é",
+			"á",
+			"í",
+			"id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-summer.php",
+					"settings":
+					{
+						"buffer_size": 5769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-070615-minecraft-101.php",
+					"settings":
+					{
+						"buffer_size": 4563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3010,
+								2985
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1330.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/ca-071315-minecraft-102.php",
+					"settings":
+					{
+						"buffer_size": 4564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3010,
+								3010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1463.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/bbn-071315-soap-box-racers.php",
+					"settings":
+					{
+						"buffer_size": 4058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2953,
+								2934
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1372.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/2015-camps/resources/css/style.css",
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								419
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/XAMPP/htdocs/DGVPJ/BIYHOLEPAGE/httpdocs/s-schedules/schedule-workshop-leader.php",
+					"settings":
+					{
+						"buffer_size": 11783,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11250,
+								11250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5320.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.954170485793,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 275.0,
+	"status_bar_visible": true
+}
