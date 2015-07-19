@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 $("#first").click(function(){
 	$(".setup").hide();
+	$(".down").hide();
 	$(".home").show();
 	$(this).css({"text-decoration":"none","color":"#212121"});
 	$("#second").css("color","#FFFFFF");
@@ -22,6 +23,7 @@ $("#first").click(function(){
 
 $("#second").click(function(){
 	$(".home").hide();
+	$(".down").hide();
 	$(".setup").show();
 	$(this).css({"text-decoration":"none","color":"#212121"});
 	$("#first").css("color","#FFFFFF");
@@ -29,6 +31,9 @@ $("#second").click(function(){
 })
 
 $("#third").click(function(){
+	$(".home").hide();
+	$(".setup").hide();
+	$(".down").show();
 	$(this).css({"text-decoration":"none","color":"#212121"});
 	$("#second").css("color","#FFFFFF");
 	$("#first").css("color","#FFFFFF");
